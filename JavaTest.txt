@@ -1,0 +1,17 @@
+method[row]	node	parent	height	start.x	start.y	end.x	end.y	content
+ifOne[10]	0	-1	0	12	2	12	34	first-statement@System.out.println("before it");
+ifOne[10]	1	-1	0	24	2	24	27	after-branch@while (str == "after if") ;
+ifOne[10]	2	-1	0	26	2	26	36	after-branch@System.out.println("after while");
+ifOne[10]	3	-1	0	13	2	22	3	if-statement@if (i == 0) {
+ifOne[10]	4	3	1	14	3	14	28	then-body@System.out.println("if");
+ifOne[10]	5	3	1	16	7	22	3	else-body@if (i == 2) {
+ifOne[10]	5	3	1	16	7	22	3	if-statement@if (i == 2) {
+ifOne[10]	6	5	2	17	3	17	14	then-body@if (x == 3) ;
+ifOne[10]	7	5	2	21	3	21	30	else-body@System.out.println("else");
+ifOne[10]	8	5	2	18	3	18	33	after-branch@System.out.println("else if");
+ifOne[10]	6	5	2	17	3	17	14	if-statement@if (x == 3) ;
+ifOne[10]	9	6	3	17	13	17	14	then-body@;
+ifOne[10]	1	-1	0	24	2	24	27	while-statement@while (str == "after if") ;
+ifOne[10]	10	1	1	24	26	24	27	while-body@;
+ifOne[10]	11	-1	0	27	2	27	2	pseudo-return@pseudo-return
+
